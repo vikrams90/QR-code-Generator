@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+   
+    <main>
+        <section class="container-fluid bg-black py-3">
+            <div class="container d-flex justify-content-center pb-4 text-white-50">
+                <div class="img-bg d-flex flex-column align-items-center py-4">
+                    <h1 class="">QR Generator</h1>
+                    <form class="d-flex flex-column gap-3 align-items-center my-3">
+                        
+                        <input class="input" type="text" required placeholder="Type Here">
+                        <label> Select Size</label>
+                        <select name="" id="select">
+                            <option value="100x100">Default</option>
+                            <option value="150x150">150 X 150</option>
+                            <option value="200x200">250 X 250</option>
+                            <option value="300x300">300 X 300</option>
+                            <option value="400x400">400 X 400</option>
+                        </select>
+                        <button class="btn btn-success" type="submit">Generate Qr</button>
+                        <div class="border m-5 bg-dark">
+                            <img class="img-fluid" src="./images/giphy.gif" alt="" >
+                        </div>
+                        <a href="" class="btn btn-info d-none" download="">Download QR</a>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
